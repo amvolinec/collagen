@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="b33e7972-87b4-4af4-a502-3331ff81c32c" name="collagen loc" url="http://collagen.loc">
-        <fileTransfer port="0" mountedRoot="C:\OSPanel\domains\collagen.loc" accessType="MOUNT" />
+        <fileTransfer port="0" mountedRoot="H:\OSPanel\domains\collagen.loc" accessType="MOUNT" />
       </webServer>
     </option>
   </component>
