@@ -12,33 +12,35 @@
                 <table class="table">
                     <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Title</th>
-                        <th>Excerpt</th>
-                        <th>Body</th>
-                        <th>Image</th>
-                        <th>Meta_description</th>
-                        <th>Meta_keywords</th>
-                        <th>Created_at</th>
-                        <th>Updated_at</th>
+                        <th scope="col">Id</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Excerpt</th>
+                        <th scope="col">Tagline</th>
+                        <th scope="col">Composition</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Meta_description</th>
+                        <th scope="col">Meta_keywords</th>
+                        <th scope="col">Created_at</th>
+                        <th scope="col">Updated_at</th>
                         <th>actions</th>
                     </tr>
                     </thead>
                     <tbody>
                     {% for post in posts %}
                         <tr>
-                            <td>{{ post.id }}</td>
+                            <th scope="row">{{ post.id }}</th>
                             <td>{{ post.title }}</td>
-                            <td>{{ post.excerpt }}</td>
-                            <td>{{ post.body }}</td>
+                            <td>{{ post.excerpt|raw }}</td>
+                            <td>{{ post.tagline|raw }}</td>
+                            <td>{{ post.composition|raw }}</td>
                             <td>{{ post.image }}</td>
                             <td>{{ post.metaDescription }}</td>
                             <td>{{ post.metaKeywords }}</td>
                             <td>{{ post.createdAt ? post.createdAt|date('Y-m-d H:i:s') : '' }}</td>
                             <td>{{ post.updatedAt ? post.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
                             <td>
-                                <a href="{{ path('post_show', {'id': post.id}) }}">show</a>
-                                <a href="{{ path('post_edit', {'id': post.id}) }}">edit</a>
+                                <a class="btn btn-sm btn-outline-info" href="{{ path('post_show', {'id': post.id}) }}">show</a>
+                                <a class="btn btn-sm btn-outline-success" href="{{ path('post_edit', {'id': post.id}) }}">edit</a>
                             </td>
                         </tr>
                     {% else %}

@@ -15,6 +15,8 @@ class PostType extends AbstractType
             ->add('title')
             ->add('excerpt')
             ->add('body')
+            ->add('tagline')
+            ->add('composition')
             ->add('image')
             ->add('meta_description')
             ->add('meta_keywords')

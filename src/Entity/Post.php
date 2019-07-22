@@ -56,6 +56,16 @@ class Post
      */
     private $updated_at;
 
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $tagline;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $composition;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -153,6 +163,30 @@ class Post
     public function setUpdatedAt(\DateTimeInterface $updated_at): self
     {
         $this->updated_at = $updated_at;
+
+        return $this;
+    }
+
+    public function getTagline(): ?string
+    {
+        return $this->tagline;
+    }
+
+    public function setTagline(string $tagline): self
+    {
+        $this->tagline = $tagline;
+
+        return $this;
+    }
+
+    public function getComposition(): ?string
+    {
+        return $this->composition;
+    }
+
+    public function setComposition(string $composition): self
+    {
+        $this->composition = $composition;
 
         return $this;
     }

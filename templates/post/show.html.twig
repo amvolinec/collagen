@@ -20,11 +20,19 @@
                     </tr>
                     <tr>
                         <th>Excerpt</th>
-                        <td>{{ post.excerpt }}</td>
+                        <td>{{ post.excerpt|raw}}</td>
                     </tr>
                     <tr>
                         <th>Body</th>
-                        <td>{{ post.body }}</td>
+                        <td>{{ post.body|raw }}</td>
+                    </tr>
+                    <tr>
+                        <th>Tagline</th>
+                        <td>{{ post.tagline|raw }}</td>
+                    </tr>
+                    <tr>
+                        <th>Composition</th>
+                        <td>{{ post.composition|raw }}</td>
                     </tr>
                     <tr>
                         <th>Image</th>
