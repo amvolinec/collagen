@@ -1,1 +1,54 @@
+body {
+    background-color: rgba(137, 213, 233, 0.20);
+}
 
+.coll-title {
+    text-align: center;
+    background: url(/images/header.png);
+}
+
+.coll-tagline, .coll-comp-head {
+    position: relative;
+    color: #fff;
+    background-color: #36b891;
+    text-align: center;
+    padding: 16px;
+    font-size: 2rem;
+}
+
+.coll-tagline::after, .coll-comp-head::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: calc(50% - 20px);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 20px 0 20px;
+    border-color: #36b891 transparent transparent transparent;
+}
+
+.coll-excerpt, .coll-composition, .coll-body {
+    padding: 16px;
+    color: #323b68;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.coll-body {
+    font-size: 1.125rem;
+    padding-bottom: 53px;
+    background: rgba(147,206,222,1);
+    background: rgba(147,206,222,1);
+    background: -moz-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(255,255,255,0.81) 30%, rgba(255,255,255,0.51) 77%, rgba(73,165,191,0.36) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(147,206,222,1)), color-stop(30%, rgba(255,255,255,0.81)), color-stop(77%, rgba(255,255,255,0.51)), color-stop(100%, rgba(73,165,191,0.36)));
+    background: -webkit-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(255,255,255,0.81) 30%, rgba(255,255,255,0.51) 77%, rgba(73,165,191,0.36) 100%);
+    background: -o-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(255,255,255,0.81) 30%, rgba(255,255,255,0.51) 77%, rgba(73,165,191,0.36) 100%);
+    background: -ms-linear-gradient(top, rgba(147,206,222,1) 0%, rgba(255,255,255,0.81) 30%, rgba(255,255,255,0.51) 77%, rgba(73,165,191,0.36) 100%);
+    background: linear-gradient(to bottom, rgba(147,206,222,1) 0%, rgba(255,255,255,0.81) 30%, rgba(255,255,255,0.51) 77%, rgba(73,165,191,0.36) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=0 )
+}
+
+.coll-footer img {
+
+}
