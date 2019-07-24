@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Juvena Oneclip">
+  <component name="PublishConfigData" serverName="Juvena Oneclip" uploadOnCheckin="2f35dbc6-5d06-4eff-90e1-f7fbedf781c5">
     <serverData>
       <paths name="Agro Farm">
         <serverdata>
@@ -231,5 +231,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="Juvena Oneclip" />
   </component>
 </project>
