@@ -49,6 +49,10 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=0 )
 }
 
-.coll-footer img {
-
+@media only screen and (max-width: 600px) {
+    .coll-excerpt, .coll-composition, .coll-body {
+        padding: 8px;
+        font-size: 2rem;
+    }
 }
+
