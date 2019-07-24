@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" serverName="Juvena Oneclip">
     <serverData>
       <paths name="Agro Farm">
         <serverdata>
@@ -42,6 +42,17 @@
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Juvena Oneclip">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/.env" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.env" />
+          </excludedPaths>
         </serverdata>
       </paths>
       <paths name="MidWeek">
