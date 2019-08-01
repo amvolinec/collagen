@@ -12,3 +12,17 @@ require('../css/app.css');
 // const $ = require('jquery');
 
 console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    setTimeout(function () {
+        initRemove();
+    }, 500);
+
+});
+
+function initRemove() {
+    let element1 = document.getElementById("collagen");
+    let element2 = document.getElementById("banner");
+    element1.classList.remove("initial");
+    element2.classList.remove("initial");
+}
