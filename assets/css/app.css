@@ -72,6 +72,7 @@ body {
 }
 
 .banner-text {
+    margin: -1px;
     color: #f8f9fa;
     background-color: #36b891;
     bottom: 0;
