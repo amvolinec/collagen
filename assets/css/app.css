@@ -99,7 +99,7 @@ body {
     width: 100%;
 }
 
-@media (min-width: 320px) and (max-width: 767px)   {
+@media only screen and (max-device-width: 480px)   {
     .coll-excerpt, .coll-composition, .coll-body {
         padding: 8px;
         font-size: 2rem;
