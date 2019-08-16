@@ -72,7 +72,7 @@ body {
 }
 
 .banner-text {
-    margin: -1px;
+    margin: -1px 0 0 0;
     color: #f8f9fa;
     background-color: #36b891;
     bottom: 0;
@@ -99,7 +99,7 @@ body {
     width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 767px)   {
     .coll-excerpt, .coll-composition, .coll-body {
         padding: 8px;
         font-size: 2rem;
