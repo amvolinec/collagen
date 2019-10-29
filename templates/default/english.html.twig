@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Juvena Marine - create your own beauty.{% endblock %}
+
+{% block body %}
+    <div class="container-fluid" style="padding: 0">
+        <div class="row" style="margin: 0">
+            <div class="col-md-12" style="padding: 0">
+                <header class="col-header">
+                    <img class="img-fluid coll-header" src="{{ asset('images/header.svg') }}">
+                    <div class="img-collagen" id="collagen">
+                        <img class="img-fluid" src="{{ asset('images/collagen.png') }}">
+                    </div>
+                </header>
+                <div class="banner-text">{{ post.title }}</div>
+                <div class="coll-banner" id="banner">
+                    <img class="img-fluid coll-back"
+                         src="{{ asset('images/background.jpg') }}">
+                </div>
+                <div class="coll-tagline">{{ post.tagline|raw }}</div>
+                <div class="coll-excerpt">{{ post.excerpt|raw }}</div>
+                <div class="coll-comp-head">Ingredients:</div>
+                <div class="coll-composition">{{ post.composition|raw }}</div>
+                <div class="coll-comp-head">Description:</div>
+                <div class="coll-body" style="padding-bottom: 7vw;">{{ post.body|raw }}</div>
+                <div class="coll-footer" style="margin-top: -8vw;">
+                    <img class="img-fluid" src="{{ asset('images/footer.svg') }}">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

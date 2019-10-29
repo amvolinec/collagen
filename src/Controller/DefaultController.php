@@ -22,4 +22,19 @@ class DefaultController extends AbstractController
             'post' => $post,
         ]);
     }
+
+    /**
+     * @Route("/english", name="english")
+     */
+    public function english()
+    {
+        $post = $this->getDoctrine()
+            ->getRepository(Post::class)
+            ->find(3);
+
+        return $this->render('default/english.html.twig', [
+            'controller_name' => 'DefaultController',
+            'post' => $post,
+        ]);
+    }
 }
